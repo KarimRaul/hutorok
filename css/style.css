@@ -43,12 +43,17 @@ h2 {
   font-weight: 300;
 }
 
-a:hover {
-  text-shadow: 1px 1px 2px var(--black), 0 0 1em var(--green);
+a:hover:not(.nav-bar__logo-link, .footer__logo-link) {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
 }
 
 a:active {
-  text-shadow: 0 0 1em var(--green);
+  color: var(--green);
+}
+
+a:focus {
+  outline-color: var(--green);
 }
 
 button {
@@ -135,6 +140,7 @@ img {
 
 .social__icon {
   position: absolute;
+  background-size: contain;
   top: 0;
   left: 0;
   right: 0;
@@ -142,11 +148,11 @@ img {
 }
 
 .social__icon-fb {
-  background-image: url(../img/FB.png);
+  background-image: url(../img/FB2.png);
 }
 
 .social__icon-insta {
-  background-image: url(../img/insta.png);
+  background-image: url(../img/insta2.png);
 }
 
 
@@ -169,8 +175,8 @@ img {
 
 .nav-bar__logo-description {
   font-size: 14px;
-  font-weight: 400;
-  margin: 18px 0 0 0;
+  font-weight: 700;
+  margin: 10px 0 0 10px;
 }
 
 .nav-bar__contact-box {
@@ -183,7 +189,7 @@ img {
 .nav-bar__tel {
   display: block;
   font-size: 21px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 
@@ -202,10 +208,11 @@ img {
 
 .burger {
   width: 30px;
-  height: 25px;
+  height: 23px;
   margin: 0;
   padding: 0;
   border: none;
+  outline: none;
   display: none;
   background-image: url(../img/burger.png);
 }
@@ -473,6 +480,9 @@ img {
   .section {
     padding: 80px 0;
   }
+  .header {
+    padding: 60px 0 0 0;
+  }
   .container-limit {
     padding: 0 100px;
   }
@@ -507,9 +517,12 @@ img {
     margin-bottom: 30px;
   }
   .btn {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     padding: 16px 24px;
+  }
+  .hero__btn {
+    padding: 16px 35px 24px 35px;
   }
   .about__item-child {
     width: 100%;
@@ -528,29 +541,32 @@ img {
   .products__description {
     padding: 0;
   }
+  .where-from__img {
+    padding-right: 0;
+  }
   .img-vegetables {
     transform: scale(0.8);
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    background: none;
-  }
   .swiper-button-prev {
-    left: 50px;
+    left: 30px;
   }
   .swiper-button-next {
-    right: 50px;
+    right: 30px;
   }
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    display: block;
-    color: var(--green);
+  .footer {
+    padding: 40px 0;
   }
 }
 
 @media (max-width:1199px) {
   .container-limit {
     padding: 0 60px;
+  }
+  .hero__heading {
+    margin-top: 30px;
+  }
+  .hero__btn {
+    padding: 20px 35px;
   }
   .img-vegetables {
     display: none;
@@ -574,11 +590,11 @@ img {
   }
   .subtitle {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
   }
   .l-text {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .nav-bar {
     flex-direction: column;
@@ -586,8 +602,13 @@ img {
   }
   .nav-bar__logo-box {
     margin-bottom: 35px;
+    position: relative;
+    width: 100%;
   }
-  .nav-bar__logo-box,
+  .burger {
+    position: absolute;
+    left: 0;
+  }
   .nav-bar__contact-box {
     width: 100%;
     flex-direction: row-reverse;
@@ -608,6 +629,16 @@ img {
   .menu__list {
     display: none;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 70px;
+    width: 35px;
+    background-size: contain;
+    top: 50%;
+  }
+  .footer {
+    padding: 25px 0;
+  }
 }
 
 @media (max-width:580px) {
@@ -622,12 +653,12 @@ img {
     line-height: 35px;
   }
   .subtitle {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .l-text {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .nav-bar__logo-box {
     flex-direction: column;
@@ -645,7 +676,7 @@ img {
   }
   .nav-bar__logo-description {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
   }
   .btn {
@@ -655,13 +686,20 @@ img {
     padding: 30px;
     border-radius: 5px;
   }
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    display: none;
+  .about__item-child {
+    padding-right: 20px;
   }
   .products__heading {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 15px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+    top: 40%;
+  }
+  .swiper-button-next {
+    right: 10px;
+    top: 40%;
   }
 }
