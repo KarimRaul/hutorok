@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хуторок-фермерские мясные продукты</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="section header">
+    <div class="container-fluid container-limit">
+      <nav class="nav-bar">
+        <div class="nav-bar__logo-box">
+          <button id="burger" class="burger" aria-label="Выпадающее меню"></button>
+          <a href="#" class="nav-bar__logo-link">
+            <img src="img/logo.png" alt="Логотип Хуторок" class="nav-bar__logo">
+          </a>
+          <p class="nav-bar__logo-description">фермерские мясные продукты</p>
+        </div>
+        <ul class="nav-bar__menu__list menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Производство</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">О&nbsp;компании</a>
+          </li>
+        </ul>
+        <div class="nav-bar__contact-box">
+          <div class="nav-bar__tel-mail">
+            <a href="tel:+78000000022" class="nav-bar__tel">8-800-000-00-22</a>
+            <a href="mailto:mail@hutorok.ru" class="nav-bar__mail">mail@hutorok.ru</a>
+          </div>
+          <button class="nav-bar__btn btn">Заказать звонок</button>
+          <ul class="header__social__list social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="social__icon social__icon-fb"></span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="social__icon social__icon-insta"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section hero">
+      <div class="container-fluid container-limit">
+        <div class="row hero__row">
+          <div class="col-xl-4 col-padding">
+            <div class="hero__box">
+              <h1 class="hero__heading">Мясные фермерские продукты <span class="title-span">из ЕАО</span></h1>
+              <p class="hero__description subtitle">Большой ассортимент замороженных и охлажденных продуктов питания оптом и в розницу.</p>
+              <button class="hero__btn btn">Получить прайс
+                <span class="hero__btn-symbol"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-8 col-padding">
+            <div class="hero__img">
+              <picture class="hero__picture">
+                <source srcset="img/meat@2x.png" type="image/png" media="(min-width:1150px)">
+                <source srcset="img/meat.png" type="image/png" media="(max-width:1150px)">
+                <img src="img/meat.png" alt="hero">
+              </picture>
+              <div class="img-vegetables hero__img-tomato"></div>
+            </div>
+          </div>
+        </div>
+        <div class="img-vegetables hero__img-salad"></div>
+        <div class="img-vegetables hero__img-leafs"></div>
+      </div>
+    </section>
+
+    <section class="section about">
+      <div class="container-fluid container-limit">
+        <ul class="about__list row">
+          <li class="about__item col-xl-3 col-lg-4 col-padding">
+            <div class="about__item-child about__item-quality">
+              <h3 class="about__title">Качество</h3>
+              <p class="about__description l-text">Мы тщательно следим за тем, что бы доставить до&nbsp;вас&nbsp;только качественную продукцию.</p>
+            </div>
+          </li>
+          <li class="about__item col-xl-3 col-lg-4 col-padding">
+            <div class="about__item-child about__item-assortment">
+              <h3 class="about__title">Ассортимент</h3>
+              <p class="about__description l-text">Огромный ассортимент, Вы всегда найдете&nbsp;для&nbsp;себя&nbsp;нужный товар</p>
+            </div>
+          </li>
+          <li class="about__item about__item-right col-xl-3 col-lg-4 col-padding">
+            <div class="about__item-child about__item-competence">
+              <h3 class="about__title">Компетентность</h3>
+              <p class="about__description l-text">Большой опыт и знание нашего дела позволяет нам&nbsp;уверенно заявлять о знании своего дела.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section where-from">
+      <div class="container-fluid container-limit">
+        <div class="row">
+          <div class="col-xl-7 col-padding  where-from__img">
+            <picture class="where-from__picture">
+              <source srcset="img/meat2@2x.png" type="image/png" media="(min-width:1150px)">
+              <source srcset="img/meat2.png" type="image/png" media="(max-width:1150px)">
+              <img src="img/meat2.png" alt="hero">
+            </picture>
+          </div>
+          <div class="col-xl-5 col-padding where-from__text">
+            <div class="where-from__box">
+              <h2 class="where-from__heading">Откуда поступает <span class="title-span">мясо</span>&nbsp;в&nbsp;наш&nbsp;магазин?</h2>
+              <p class="where-from__text-top subtitle">У компании собственное Крестьянско-фермерское хозяйство расположенное в живописных местах, благоприятных для выращивания здоровых и сильных животных. Оттуда поставляется натуральное мясо высочайшего качества и отличного вкуса.</p>
+              <p class="where-from__text-bottom l-text">Продукция, представленная в магазине, проходит тщательную обработку, отвечающую строгим стандартам, предусмотренным для продуктов питания. Каждая партия сопровождается ветеринарным паспортом и сертификатом соответствия ГОСТу.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section products">
+      <div class="container-fluid container-limit">
+        <div class="col-xl-8 col-padding">
+          <h2 class="products__heading">Продукты&nbsp;от&nbsp;фермеров специально&nbsp;<span class="title-span">к&nbsp;вашему&nbsp;столу</span></h2>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="products__box">
+                <img src="img/1.jpg" alt="Фото продукции" class="products__photo">
+                <h3 class="products__name">Короткий заголовок продукции</h3>
+                <p class="products__description l-text">краткое описание данной позиции, фото необходимы либо вырезанные либо провести фотосессию в одной стилистике</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="products__box">
+                <img src="img/1.jpg" alt="Фото продукции" class="products__photo">
+                <h3 class="products__name">Короткий заголовок продукции</h3>
+                <p class="products__description l-text">краткое описание данной позиции, фото необходимы либо вырезанные либо провести фотосессию в одной стилистике</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="products__box">
+                <img src="img/1.jpg" alt="Фото продукции" class="products__photo">
+                <h3 class="products__name">Короткий заголовок продукции</h3>
+                <p class="products__description l-text">краткое описание данной позиции, фото необходимы либо вырезанные либо провести фотосессию в одной стилистике</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="products__box">
+                <img src="img/1.jpg" alt="Фото продукции" class="products__photo">
+                <h3 class="products__name">Короткий заголовок продукции</h3>
+                <p class="products__description l-text">краткое описание данной позиции, фото необходимы либо вырезанные либо провести фотосессию в одной стилистике</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="products__box">
+                <img src="img/1.jpg" alt="Фото продукции" class="products__photo">
+                <h3 class="products__name">Короткий заголовок продукции</h3>
+                <p class="products__description l-text">краткое описание данной позиции, фото необходимы либо вырезанные либо провести фотосессию в одной стилистике</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="products__box">
+                <img src="img/1.jpg" alt="Фото продукции" class="products__photo">
+                <h3 class="products__name">Короткий заголовок продукции</h3>
+                <p class="products__description l-text">краткое описание данной позиции, фото необходимы либо вырезанные либо провести фотосессию в одной стилистике</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="img-vegetables products__img-salad"></div>
+        <div class="img-vegetables products__img-leafs"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="container-fluid container-limit footer__container">
+      <a href="#" class="footer__logo-link">
+        <img src="img/logo.png" alt="Логотип Хуторок" class="footer__logo">
+      </a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Производство</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Новости</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">О&nbsp;компании</a>
+        </li>
+      </ul>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__icon social__icon-fb"></span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__icon social__icon-insta"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+
+      speed: 800,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // Default parameters
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 720px
+        720: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        // when window width is >= 1280px
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        // when window width is >= 1640px
+        1650: {
+          slidesPerView: 3,
+          spaceBetween: 99
+        }
+      },
+    })
+  </script>
+
+</body>
+
+</html>
