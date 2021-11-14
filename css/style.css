@@ -15,6 +15,7 @@ body {
 
 a {
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   color: var(--black);
 }
 
@@ -45,7 +46,7 @@ h2 {
 
 a:hover:not(.nav-bar__logo-link, .footer__logo-link) {
   color: var(--green);
-  border-bottom: 2px solid var(--green);
+  border-bottom: 1px solid var(--green);
 }
 
 a:active {
@@ -79,10 +80,6 @@ img {
   max-width: 1920px;
   padding: 0 180px;
   margin: 0 auto;
-}
-
-.col-padding {
-  padding: 0;
 }
 
 .btn {
@@ -227,7 +224,7 @@ img {
 }
 
 .hero__box {
-  width: 110%;
+  width: 120%;
 }
 
 .hero__heading {
@@ -357,6 +354,7 @@ img {
 
 .where-from__heading {
   margin: 30px 0;
+  padding-right: 80px;
 }
 
 .where-from__text-top {
@@ -378,10 +376,6 @@ img {
 
 .products__heading {
   margin: 0 0 80px 0;
-}
-
-.swiper {
-  max-width: 1100px;
 }
 
 .swiper-slide {
@@ -435,21 +429,19 @@ img {
 }
 
 .products__img-leafs {
-  height: 258px;
-  width: 257px;
-  right: -90px;
-  bottom: -60px;
-  background: no-repeat center center url("../img/leafs.png");
-  transform: rotate(180deg) scale(1.1, -1.1);
+  height: 290px;
+  width: 287px;
+  right: -120px;
+  bottom: -80px;
+  background: no-repeat center center url("../img/leafs2.png");
 }
 
 .products__img-salad {
-  height: 265px;
-  width: 364px;
-  left: -205px;
-  top: -140px;
-  background: no-repeat center center url("../img/salad.png");
-  transform: scale(0.9);
+  height: 234px;
+  width: 322px;
+  left: -160px;
+  top: -120px;
+  background: no-repeat center center url("../img/salad2.png");
 }
 
 
@@ -474,6 +466,12 @@ img {
 .footer__logo {
   height: 88px;
   width: 150px;
+}
+
+@media (max-width:1920px) {
+  .swiper {
+    max-width: 1100px;
+  }
 }
 
 @media (max-width:1650px) {
@@ -516,6 +514,10 @@ img {
     line-height: 33px;
     margin-bottom: 30px;
   }
+  .hero__img {
+    padding: 0;
+    margin: 0;
+  }
   .btn {
     font-size: 18px;
     font-weight: 500;
@@ -533,6 +535,9 @@ img {
   .about__item-competence {
     width: 100%;
   }
+  .where-from__heading {
+    padding-right: 0;
+  }
   .where-from__text {
     left: 0;
   }
@@ -547,11 +552,15 @@ img {
   .img-vegetables {
     transform: scale(0.8);
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 50%;
+  }
   .swiper-button-prev {
-    left: 30px;
+    left: 2%;
   }
   .swiper-button-next {
-    right: 30px;
+    right: 2%;
   }
   .footer {
     padding: 40px 0;
@@ -689,17 +698,18 @@ img {
   .about__item-child {
     padding-right: 20px;
   }
-  .products__heading {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 15px;
-  }
   .swiper-button-prev {
     left: 10px;
-    top: 40%;
   }
   .swiper-button-next {
     right: 10px;
-    top: 40%;
+  }
+}
+
+@media (max-width:360px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 50px;
+    width: 25px;
   }
 }
